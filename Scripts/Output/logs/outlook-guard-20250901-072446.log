@@ -1,0 +1,5 @@
+==> Setter Outlook-policyer: blokkere nye PST, hindre PST-vekst, POP/IMAP, krysskopi og forenklet kontooppretting
+V Outlook-policyer satt
+==> Tvinger ny e-post fra standardkonto (policy)
+V Policy aktiv: NewItemsUseDefaultSendingAccount=1
+V Ferdig. Start Outlook på nytt for å hente inn policyene. Eventuelle regler i EXO er aktive umiddelbart.

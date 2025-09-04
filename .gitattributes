@@ -1,0 +1,5 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+<<<<<<< HEAD
+*.nytype filter=lfs diff=lfs merge=lfs -text
+=======
+>>>>>>> 71a359750d1973eac105ea72fa6a39e6248ab732

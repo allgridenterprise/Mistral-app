@@ -1,0 +1,5 @@
+ParserError: C:\Users\DanSolberg\RiderProjects\Mistral app\Scripts\attachment_optimize.ps1:148
+Line |
+ 148 |  .  "https://graph.microsoft.com/v1.0/drives/$DriveId/root:$acc:/childre .
+     |                                                            ~~~~~
+     | Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.

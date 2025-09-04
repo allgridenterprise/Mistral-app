@@ -1,0 +1,26 @@
+# CHANGE MESSAGE PREVENTION
+*.diff
+*.patch
+*.rej
+*.orig
+*.backup
+*.bak
+*.tmp
+*.old
+*_BACKUP_*
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*
+*.mine
+*.autosave
+*.recover
+*~
+.vs/
+.vscode/
+.idea/
+*.DotSettings.user
+*.suo
+*.user
+Desktop.ini
+Thumbs.db
+.DS_Store

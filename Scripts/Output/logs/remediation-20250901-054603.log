@@ -1,0 +1,117 @@
+==> Windows: Rydder MSA/Store og setter 'business-only' preferanser
+==> Viser Entra-status (dsregcmd /status)
+
++----------------------------------------------------------------------+
+| Device State                                                         |
++----------------------------------------------------------------------+
+
+             AzureAdJoined : YES
+          EnterpriseJoined : NO
+              DomainJoined : NO
+           Virtual Desktop : NOT SET
+               Device Name : Allgrid-Dan
+
++----------------------------------------------------------------------+
+| Device Details                                                       |
++----------------------------------------------------------------------+
+
+                  DeviceId : c346f135-7eb0-42ee-91f6-4886e46aa221
+                Thumbprint : 9A58810787270BD9D280CA291F33BE6B57B7B103
+ DeviceCertificateValidity : [ 2025-03-05 11:15:18.000 UTC -- 2035-03-05 11:45:18.000 UTC ]
+            KeyContainerId : 432b4df0-ec72-4b92-875f-a91d9efc4b98
+               KeyProvider : Microsoft Platform Crypto Provider
+              TpmProtected : YES
+          DeviceAuthStatus : SUCCESS
+
++----------------------------------------------------------------------+
+| Tenant Details                                                       |
++----------------------------------------------------------------------+
+
+                TenantName : Allgrid
+                  TenantId : d22f0e02-1f57-4948-b925-a932c70f4f8e
+               AuthCodeUrl : https://login.microsoftonline.com/d22f0e02-1f57-4948-b925-a932c70f4f8e/oauth2/authorize
+            AccessTokenUrl : https://login.microsoftonline.com/d22f0e02-1f57-4948-b925-a932c70f4f8e/oauth2/token
+                    MdmUrl : 
+                 MdmTouUrl : 
+          MdmComplianceUrl : 
+               SettingsUrl : 
+            JoinSrvVersion : 2.0
+                JoinSrvUrl : https://enterpriseregistration.windows.net/EnrollmentServer/device/
+                 JoinSrvId : urn:ms-drs:enterpriseregistration.windows.net
+             KeySrvVersion : 1.0
+                 KeySrvUrl : https://enterpriseregistration.windows.net/EnrollmentServer/key/
+                  KeySrvId : urn:ms-drs:enterpriseregistration.windows.net
+        WebAuthNSrvVersion : 1.0
+            WebAuthNSrvUrl : https://enterpriseregistration.windows.net/webauthn/d22f0e02-1f57-4948-b925-a932c70f4f8e/
+             WebAuthNSrvId : urn:ms-drs:enterpriseregistration.windows.net
+    DeviceManagementSrvVer : 1.0
+    DeviceManagementSrvUrl : https://enterpriseregistration.windows.net/manage/d22f0e02-1f57-4948-b925-a932c70f4f8e/
+     DeviceManagementSrvId : urn:ms-drs:enterpriseregistration.windows.net
+
++----------------------------------------------------------------------+
+| User State                                                           |
++----------------------------------------------------------------------+
+
+                    NgcSet : YES
+                  NgcKeyId : {188D4966-00C9-4415-AC7F-AB0C55396D0B}
+                  CanReset : DestructiveOnly
+           WorkplaceJoined : NO
+             WamDefaultSet : YES
+       WamDefaultAuthority : organizations
+              WamDefaultId : https://login.microsoft.com
+            WamDefaultGUID : {B16898C6-A148-4967-9171-64D755DA8520} (AzureAd)
+
++----------------------------------------------------------------------+
+| SSO State                                                            |
++----------------------------------------------------------------------+
+
+                AzureAdPrt : YES
+      AzureAdPrtUpdateTime : 2025-08-31 21:30:20.000 UTC
+      AzureAdPrtExpiryTime : 2025-09-15 01:45:28.000 UTC
+       AzureAdPrtAuthority : https://login.microsoftonline.com/d22f0e02-1f57-4948-b925-a932c70f4f8e
+             EnterprisePrt : NO
+    EnterprisePrtAuthority : 
+                 OnPremTgt : NO
+                  CloudTgt : YES
+         KerbTopLevelNames : .windows.net,.windows.net:1433,.windows.net:3342,.azure.net,.azure.net:1433,.azure.net:3342
+
++----------------------------------------------------------------------+
+| Diagnostic Data                                                      |
++----------------------------------------------------------------------+
+
+        AadRecoveryEnabled : NO
+    Executing Account Name : AzureAD\DanSolberg, dan@allgrid.com
+               KeySignTest : PASSED
+
+        DisplayNameUpdated : Managed by MDM
+          OsVersionUpdated : Managed by MDM
+           HostNameUpdated : YES
+
+      Last HostName Update : NONE
+
++----------------------------------------------------------------------+
+| IE Proxy Config for Current User                                     |
++----------------------------------------------------------------------+
+
+      Auto Detect Settings : YES
+    Auto-Configuration URL : 
+         Proxy Server List : 
+         Proxy Bypass List : 
+
++----------------------------------------------------------------------+
+| WinHttp Default Proxy Config                                         |
++----------------------------------------------------------------------+
+
+               Access Type : DIRECT
+
+For more information, please visit https://www.microsoft.com/aadjerrors
+==> Rydder Microsoft Store cache (wsreset.exe)
+V Windows Store cache renset
+Fjerner KUN MicrosoftAccount legitimasjoner...
+Ferdig med MSA-rydding
+V Satt DisableMSAccount=3 (full blokk av MSA-innlogging og tillegg)
+V Satt policies for å dempe forbrukerinnhold og Store-forslag
+? Start PC på nytt for at alle policyer skal anvendes fullt ut.
+==> Setter Edge-policy: begrens pålogging til mønster *@allgrid.com
+V Edge-policy satt. Restart Edge for effekt.
+==> Ferdig. Reboot for Windows-policyer. Verifisér i Store/Office og på iPhone.
